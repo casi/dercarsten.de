@@ -10,24 +10,29 @@ p {
   font-size: 0.9em; }
 
 #wrapper {
-  width: 400px;
+  width: 380px;
   overflow: auto;
   padding: 20px;
   margin: 50px auto;
-  border: solid 1px #D3D3D3; }
+  border: solid 1px #D3D3D3;
+  position: relative; }
 
 .left {
   width: 180px;
   height: 187px;
   float: left; }
   .left img {
-    border: solid 1px #DCDCDC; }
+    border: solid 1px #D3D3D3; }
 
 .right {
   overflow: auto;
   text-align: right; }
 
-.skills img {
-  border: 0; }
+.skills {
+  position: absolute;
+  bottom: 14px;
+  right: 20px; }
+  .skills img {
+    border: 0; }
 
 /*# sourceMappingURL=style.css.map */

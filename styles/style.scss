@@ -1,9 +1,11 @@
 $font-stack: Helvetica, 'Helvetica Neue', Verdana, sans-serif;
+$primary-color: #707070;
+$secondary-color: #D3D3D3;
 
 body {
 	font-family: $font-stack;
 	font-size: 1em;
-	color: #707070;
+	color: $primary-color;
 }
 
 h3 {
@@ -15,11 +17,12 @@ p {
 }
 
 #wrapper {
-	width: 400px;
+	width: 380px;
 	overflow: auto;
 	padding: 20px;
 	margin: 50px auto;
-	border: solid 1px #D3D3D3;
+	border: solid 1px $secondary-color;
+	position: relative;
 }
 
 .left {
@@ -28,7 +31,7 @@ p {
 	float: left;
 
 	img {
-		border: solid 1px #DCDCDC;
+		border: solid 1px $secondary-color;
 	}
 }
 
@@ -41,4 +44,7 @@ p {
 	img {
 		border: 0;
 	}
+	position: absolute;
+	bottom: 14px;
+	right: 20px;
 }
