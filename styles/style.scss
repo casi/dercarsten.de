@@ -1,48 +1,95 @@
+// variables -------------------------------------------------------
 $font-stack: Helvetica, 'Helvetica Neue', Verdana, sans-serif;
-$primary-color: #707070;
-$secondary-color: #D3D3D3;
+$prim-color: #A9A9A9;
+$sec-color: #FF3B3F;
+$third-color: #EFEFEF;
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+// mixins ----------------------------------------------------------
+@mixin border-radius($radius) {
+	-webkit-border-radius: 	$radius;
+	-moz-border-radius: 	$radius;
+	-ms-border-radius: 		$radius;
+	border-radius: 			$radius;
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+	-webkit-box-shadow:	$horizontal $vertical $blur $spread $color;
+	-moz-box-shadow:	$horizontal $vertical $blur $spread $color;
+	-ms-box-shadow:		$horizontal $vertical $blur $spread $color;
+	box-shadow:			$horizontal $vertical $blur $spread $color;
+}
+
+@mixin transform ($scale) {
+	-webkit-transform: scale($scale);
+	-moz-transform: scale($scale);
+	transform: scale($scale);
+}
+// ----------------------------------------------------------------
 
 body {
 	font-family: $font-stack;
 	font-size: 1em;
-	color: $primary-color;
+	font-weight: 400;
+	color: $prim-color;
 }
 
 h3 {
 	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 14pt; //font-size explicitly for f*** firefox
+	letter-spacing: -.025em;
 }
 
 p {
-	font-size: 0.9em;
+	font-size: .85em;
+	letter-spacing: .025em;
 }
 
 #wrapper {
-	width: 380px;
+	width: 390px;
 	overflow: auto;
 	padding: 20px;
-	margin: 50px auto;
-	border: solid 1px $secondary-color;
+	margin: 40px auto;
+	border: solid 1px $third-color;
 	position: relative;
+	@include border-radius(4px);
+	@include box-shadow(5px, 5px, 10px, -4px, $prim-color);
+	//box-sizing: border-box;
 }
 
 .left {
-	width: 180px;
+	width: 178px;
 	height: 187px;
 	float: left;
 
 	img {
-		border: solid 1px $secondary-color;
+		@include border-radius(4px);
 	}
 }
 
 .right {
 	overflow: auto;
 	text-align: right;
+
+	#{$a-tags} {
+		color: $sec-color;
+		text-decoration: none;
+		cursor: auto;
+	}
+	#{$a-tags-hover} {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 }
 
 .skills {
 	img {
 		border: 0;
+	}
+	img:hover {
+		@include transform(2)
 	}
 	position: absolute;
 	bottom: 14px;

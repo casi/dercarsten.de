@@ -1,32 +1,55 @@
 body {
   font-family: Helvetica, "Helvetica Neue", Verdana, sans-serif;
   font-size: 1em;
-  color: #707070; }
+  font-weight: 400;
+  color: #A9A9A9; }
 
 h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 14pt;
+  letter-spacing: -.025em; }
 
 p {
-  font-size: 0.9em; }
+  font-size: .85em;
+  letter-spacing: .025em; }
 
 #wrapper {
-  width: 380px;
+  width: 390px;
   overflow: auto;
   padding: 20px;
-  margin: 50px auto;
-  border: solid 1px #D3D3D3;
-  position: relative; }
+  margin: 40px auto;
+  border: solid 1px #EFEFEF;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 5px 5px 10px -4px #A9A9A9;
+  -moz-box-shadow: 5px 5px 10px -4px #A9A9A9;
+  -ms-box-shadow: 5px 5px 10px -4px #A9A9A9;
+  box-shadow: 5px 5px 10px -4px #A9A9A9; }
 
 .left {
-  width: 180px;
+  width: 178px;
   height: 187px;
   float: left; }
   .left img {
-    border: solid 1px #D3D3D3; }
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
 
 .right {
   overflow: auto;
   text-align: right; }
+  .right a, .right a:active, .right a:hover, .right a:visited {
+    color: #FF3B3F;
+    text-decoration: none;
+    cursor: auto; }
+  .right a:active, .right a:hover {
+    text-decoration: underline;
+    cursor: pointer; }
 
 .skills {
   position: absolute;
@@ -34,5 +57,9 @@ p {
   right: 20px; }
   .skills img {
     border: 0; }
+  .skills img:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    transform: scale(2); }
 
 /*# sourceMappingURL=style.css.map */
