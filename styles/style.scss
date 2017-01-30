@@ -1,8 +1,8 @@
 // variables -------------------------------------------------------
 $font-stack: Helvetica, 'Helvetica Neue', Verdana, sans-serif;
-$prim-color: #A9A9A9;
+$prim-color: #999;
 $sec-color: #FF3B3F;
-$third-color: #EFEFEF;
+$third-color: #eee;
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 
@@ -31,32 +31,32 @@ $a-tags-hover: 'a:active, a:hover';
 body {
 	font-family: $font-stack;
 	font-size: 1em;
-	font-weight: 400;
 	color: $prim-color;
 }
 
-h3 {
+h1 {
 	margin-top: 0;
 	text-transform: uppercase;
 	font-size: 14pt; //font-size explicitly for f*** firefox
-	letter-spacing: -.025em;
+	letter-spacing: -.02em;
 }
 
 p {
 	font-size: .85em;
-	letter-spacing: .025em;
+	letter-spacing: .06em;
+	font-weight: 350;
 }
 
 #wrapper {
-	width: 390px;
+	max-width: 390px;
+	min-width: 370px;
 	overflow: auto;
 	padding: 20px;
 	margin: 40px auto;
 	border: solid 1px $third-color;
 	position: relative;
 	@include border-radius(4px);
-	@include box-shadow(5px, 5px, 10px, -4px, $prim-color);
-	//box-sizing: border-box;
+	@include box-shadow(0, 5px, 4px, -4px, $prim-color);
 }
 
 .left {
@@ -87,9 +87,9 @@ p {
 .skills {
 	img {
 		border: 0;
-	}
-	img:hover {
-		@include transform(2)
+		&:hover {
+			@include transform(2)
+		}
 	}
 	position: absolute;
 	bottom: 14px;
