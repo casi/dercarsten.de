@@ -1,7 +1,7 @@
 // variables -------------------------------------------------------
 $font-stack: Helvetica, 'Helvetica Neue', Verdana, sans-serif;
-$prim-color: #999;
-$sec-color: #FF3B3F;
+$prim-color: #696969;
+$sec-color: #F16529;
 $third-color: #eee;
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
@@ -12,6 +12,14 @@ $a-tags-hover: 'a:active, a:hover';
 	-moz-border-radius: 	$radius;
 	-ms-border-radius: 		$radius;
 	border-radius: 			$radius;
+}
+
+@mixin circle($width, $color) {
+	width: $width;
+	border-color: $color;
+	-webkit-border-radius: $width/2;
+	-moz-border-radius: $width/2;
+	border-radius: $width/2;
 }
 
 @mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
@@ -28,7 +36,7 @@ $a-tags-hover: 'a:active, a:hover';
 }
 // ----------------------------------------------------------------
 
-body {
+html, body {
 	font-family: $font-stack;
 	font-size: 1em;
 	color: $prim-color;
@@ -47,9 +55,13 @@ p {
 	font-weight: 350;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 #wrapper {
-	max-width: 390px;
-	min-width: 370px;
+	max-width: 370px;
 	overflow: auto;
 	padding: 20px;
 	margin: 40px auto;
@@ -60,12 +72,11 @@ p {
 }
 
 .left {
-	width: 178px;
-	height: 187px;
 	float: left;
 
 	img {
-		@include border-radius(4px);
+		@include circle(186px, $third-color)
+		//@include circle(66.66%, $third-color)
 	}
 }
 
@@ -95,3 +106,4 @@ p {
 	bottom: 14px;
 	right: 20px;
 }
+
