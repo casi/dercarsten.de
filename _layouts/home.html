@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="left">
+{% if profil_image != '' %}
+	<img alt="{{ site.author_name }}" src="{{ site.profile_image }}" class="profile_img">
+{% endif %}
+</div>
+<div class="right">
+	<h1>{{ site.author_name }}</h1>
+	<p>{{ site.author_jobtitle1 }}<br />
+	{{ site.author_jobtitle2 }}</p>
+	<p>{{ site.author_location }}</p>
+	<p>&rarr; <a href="{{ site.social_link }}">{{ site.social_link_name }}</a></p>
+	<div class="skills">
+		<img alt="Ruby Programming Language" width="21" height="21" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg">
+		<img alt="Ruby on Rails" width="21" height="25" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg">
+		<img alt="Java Programming Language" width="15" height="29" src="https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg">
+		<img alt="HTML 5" width="25" height="25" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg">
+		<img alt="SASS - Syntactically Awesome Stylesheets" width="25" height="25" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg">
+		<img alt="Responsive design with Bootstrap" width="25" height="25" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg">
+		<img alt="git" width="38" height="28" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg">		
+	</div>
+</div>

@@ -1,0 +1,38 @@
+
+title: Carsten Behnert
+author_name: Carsten Behnert
+author_jobtitle1: Software Developer
+author_jobtitle2: IT Business Analyst
+author_location: Berlin, Germany
+email: ichbins[at]dercarsten.de
+keywords: > #
+  Carsten, Behnert, Berlin, software, developer, development, programmer, Anwendungsentwickler, consultant, business, analyst, web, Ruby, Rails, Java, bootstrap, coffeescript, sql, html5, css, git, usability, requirements, engineering, system, analysis, test, management
+description: > # this means to ignore newlines until "baseurl:"
+  Official website of Carsten Behnert, Software Developer and Business Analyst living in Berlin, Gemany.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dercarsten.de" # the base hostname & protocol for your site, e.g. http://example.com
+profile_image: "/assets/profile_img.jpg"
+social_link: https://www.xing.com/profile/Carsten_Behnert
+social_link_name: xing profile
+twitter_username: cbehnert
+github_username:  casi
+
+# Build settings
+markdown: kramdown
+theme: #minima
+plugins:
+  - jekyll-octicons
+#  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - docker/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
