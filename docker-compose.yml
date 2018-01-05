@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  vserver:
+    external:
+      name: v39170
+
+services:
+
+  app:
+    image: casi257/www:latest
+    env_file: .env
+    networks:
+      - default
+      - vserver
