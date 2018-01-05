@@ -10,3 +10,10 @@ Icon
 ._*
 
 .sass-cache
+
+# Jekyll output folder
+_site
+.jekyll-metadata
+assets/*.css.map
+
+.idea
