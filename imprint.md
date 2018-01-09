@@ -4,7 +4,7 @@ title: Imprint
 permalink: /imprint/
 ---
 
-![Site's address as QR-Code]({{ "/assets/images/dercarsten_qr.png" }})
+![Site's address as QR-Code]({{ "/assets/img/dercarsten_qr.png" }})
 
 ## Address
 

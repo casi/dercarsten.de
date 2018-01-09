@@ -1,7 +1,9 @@
 # dercarsten.de
 My personal website (still under construction atm ;) ).
 
-## Deployment (initial)
+## Deployment
+
+### Initial
 
   - `git checkout` the branch / tag you want to deploy
   - build image `docker build --tag casi257/www:latest .`
@@ -19,4 +21,5 @@ My personal website (still under construction atm ;) ).
   - stop all new services `docker-compose stop app`
   - remove all stopped containers `docker-compose rm` 
   - to restart all services `docker-compose up -d` 
+  
   
