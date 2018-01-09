@@ -5,10 +5,12 @@
 </head>
 
 <body>
-	{% include header.html %}
-	<div id="wrapper">
-	{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+	<div class="container">
+		<main role="main">
+		{% include header.html %}
+		{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+		{% include footer.html %}
+		</main>
 	</div>
-	{% include footer.html %}
 </body>
 </html>

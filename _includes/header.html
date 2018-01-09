@@ -1,19 +1,17 @@
-<nav class="navbar">
-	<ul class="nav">
-		<li class="nav-item">
-			<a class="nav-link {{'active' if page.title.downcase == home}}" href="{{site.baseurl}}/">
-			{% octicon home height:28 class:"right left" aria-label:home %}
-			</a>
-		</li>
-		<!--li class="nav-item">
-			<a class="nav-link {{'active' if page.title.downcase == vita}}" href="{{site.baseurl}}/vita">
-			{% octicon person height:28 class:"right left" aria-label:vita %}
-			</a>
-		</li-->
-		<!--li class="nav-item">
-			<a class="nav-link {{'active' if page.title.downcase == blog}}" href="{{site.baseurl}}/blog">
-			{% octicon keyboard height:32 class:"right left" aria-label:blog %}
-			</a>
-		</li-->
-	</ul>
-</nav>
+<header class="header clearfix">
+	<nav>
+		<ul class="nav float-right">
+			<li class="nav-item">
+				<a class="nav-link {{ if page.title.downcase == vita ? 'active' : 'inactive'}}" href="{{site.baseurl}}/vita">
+					{% octicon person height:24 class:"right left" aria-label:vita %}
+				</a>
+			</li>
+			<!--li class="nav-item">
+				<a class="nav-link {{'active' if page.title.downcase == blog}}" href="{{site.baseurl}}/blog">
+				{% octicon keyboard height:24 class:"right left" aria-label:blog %}
+				</a>
+			</li-->
+		</ul>
+	</nav>
+	<h3><a title="home" href="/">{{ site.author_name }}</a></h3>
+</header>
