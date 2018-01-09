@@ -9,12 +9,12 @@ $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 
 // mixins ----------------------------------------------------------
-@mixin border-radius($radius) {
+/*@mixin border-radius($radius) {
 	-webkit-border-radius: 	$radius;
 	-moz-border-radius: 	$radius;
 	-ms-border-radius: 		$radius;
 	border-radius: 			$radius;
-}
+}*/
 
 @mixin circle($width, $color) {
 	width: $width;
@@ -44,14 +44,18 @@ html, body {
 	color: $prim-color;
 }
 
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
 h1 {
 	margin-top: 0;
 	text-transform: uppercase;
 	font-size: 1.1em;
 	letter-spacing: -.02em;
 }
-h2 { font-size: .95em }
-h3 { font-size: .85em }
+h2 { font-size: .85em }
+h3 { font-size: .75em }
 
 p, ol, ul {
 	font-size: .85em;
@@ -98,15 +102,15 @@ nav.navbar {
 	}
 }
 
-#wrapper {
+.container {
 	max-width: 370px;
 	overflow: auto;
 	padding: 20px;
 	margin: 30px auto 10px auto;
 	border: solid 1px $third-color;
 	position: relative;
-	@include border-radius(2px);
-	@include box-shadow(0, 5px, 4px, -4px, $prim-color);
+	//@include border-radius(2px);
+	//@include box-shadow(0, 5px, 4px, -4px, $prim-color);
 
 	#{$a-tags} {
 		color: $sec-color;

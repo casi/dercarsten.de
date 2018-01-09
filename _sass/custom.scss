@@ -1,0 +1,139 @@
+// Main-Stylesheet 
+
+// variables -------------------------------------------------------
+$prim-color: #696969;   // dark grey
+$sec-color: #999;  		// lighter grey
+$link-color: #F16529;   // kinda-orange
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+// mixins ----------------------------------------------------------
+@mixin border-radius($radius) {
+	-webkit-border-radius: 	$radius;
+	-moz-border-radius: 	$radius;
+	-ms-border-radius: 		$radius;
+	border-radius: 			$radius;
+}
+
+@mixin circle($width, $color) {
+	width: $width;
+	border-color: $color;
+	-webkit-border-radius: $width/2;
+	-moz-border-radius: $width/2;
+	border-radius: $width/2;
+}
+
+@mixin transform ($scale) {
+	-webkit-transform: scale($scale);
+	-moz-transform: scale($scale);
+	transform: scale($scale);
+}
+// ----------------------------------------------------------------
+
+html, body {
+	font-size: 1em;
+	color: $prim-color;
+	margin: 0;
+	padding: 0;
+}
+
+#{$a-tags} {
+	color: $link-color;
+	text-decoration: underline;
+	cursor: auto;
+}
+#{$a-tags-hover} {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.profile_img {
+	margin-top: .6rem;
+	@include circle(180px, $sec-color)
+}
+
+header {
+	border-bottom: 1px solid $sec-color;
+	padding-bottom: .5rem;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		padding: 0;
+		color: $sec-color;
+
+		.octicon path {
+ 			fill: $sec-color;
+		}
+
+		#{$a-tags} {
+			color: $sec-color;
+			text-decoration: none;
+			cursor: auto;
+		}
+		#{$a-tags-hover} {
+			fill: $sec-color;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	h3 {
+		font-size: 1.3em;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin: 0;
+		
+		#{$a-tags} {
+			color: $sec-color;
+			text-decoration: none;
+			cursor: auto;
+		}
+		#{$a-tags-hover} {
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
+
+.container {
+	margin-top: 2rem;
+	max-width: 36rem;
+	
+	.home {
+		text-align: right;
+		color: $prim-color;
+		min-height: 12rem;
+	}
+
+	.skills {
+		img {
+			border: 0;
+			&:hover {
+				@include transform(2)
+			}
+		}
+		position: absolute;
+		bottom: 0;
+		right: 1rem;
+	}
+}
+
+.footer {
+	background: none;
+	color: $sec_color;
+	text-transform: uppercase;
+	padding: 1rem 0 1rem 0;
+	margin: 1rem 0 3rem 0;
+	border-top: 1px solid $sec-color;
+	font-size: .85em;
+	font-weight: 300;
+	
+	p {
+		line-height: 1;
+		#{$a-tags} { 
+			color: $sec-color;
+		}
+	}
+}
+
+
