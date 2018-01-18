@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="row justify-content-between">
+<div class="row">
 	<div class="col-sm-4">
 		{% if profil_image != '' %}
 		<img alt="{{ site.author_name }}" src="{{ site.profile_image }}" class="profile_img img-fluid">
 		{% endif %}
 	</div>
-	<div class="col-sm-7 home">
+	<div class="col-sm-8 home">
 		<h2>{{ site.author_jobtitle1 }}<br />
 		{{ site.author_jobtitle2 }}</h2>
 		<p>{{ site.author_location }}</p>
