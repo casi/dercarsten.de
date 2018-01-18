@@ -12,7 +12,7 @@ Carsten Behnert
 Plonzstraße 19  
 10365 Berlin, Germany
 
-E-Mail: [ichbins@dercarsten.de][email]  
+E-Mail: [info@dercarsten.de][email]  
 Internet: [http://dercarsten.de][internet]
 
 Responsible for content according to § 10 para. 3 MDStV: Carsten Behnert
@@ -25,5 +25,5 @@ All texts and images published at dercarsten.de are subject to copyright by Cars
 
 It is explicitly allowed, even desired, to link to my pages! Use the medium of the Internet properly and make use of hyperlinks instead of plain re-publishing of the contents.
 
-[email]: mailto:ichbins@dercarsten.de
+[email]: mailto:info@dercarsten.de
 [internet]: http://dercarsten.de
