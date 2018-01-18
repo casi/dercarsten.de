@@ -2,17 +2,17 @@
 
 // variables -------------------------------------------------------
 $prim-color: #696969;   // dark grey
-$sec-color: #999;  		// lighter grey
-$link-color: #F16529;   // kinda-orange
+$sec-color: #999;       // lighter grey
+$link-color: #D7101E;   // kinda-red
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 
 // mixins ----------------------------------------------------------
 @mixin border-radius($radius) {
-	-webkit-border-radius: 	$radius;
-	-moz-border-radius: 	$radius;
-	-ms-border-radius: 		$radius;
-	border-radius: 			$radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	-ms-border-radius:     $radius;
+	border-radius:         $radius;
 }
 
 @mixin circle($width, $color) {
@@ -32,9 +32,15 @@ $a-tags-hover: 'a:active, a:hover';
 
 html, body {
 	font-size: 1em;
+	font-weight: 300;
 	color: $prim-color;
 	margin: 0;
 	padding: 0;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	text-weight: 600;
 }
 
 #{$a-tags} {
@@ -62,7 +68,7 @@ header {
 		color: $sec-color;
 
 		.octicon path {
- 			fill: $sec-color;
+			fill: $sec-color;
 		}
 
 		#{$a-tags} {
@@ -103,6 +109,10 @@ header {
 		text-align: right;
 		color: $prim-color;
 		min-height: 12rem;
+		h2 {
+			text-weight: 700;
+			letter-spacing: -1px;
+		}
 	}
 
 	.skills {
