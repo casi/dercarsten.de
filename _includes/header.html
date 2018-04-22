@@ -1,17 +1,17 @@
-<header class="header clearfix">
+<header>
 	<nav>
-		<ul class="nav float-right">
+		<ul class="nav">
 			<li class="nav-item">
-				<a class="nav-link {{ if page.title.downcase == vita ? 'active' : 'inactive'}}" href="{{site.baseurl}}/vita">
-					{% octicon person height:24 class:"right left" aria-label:vita %}
+				<a class="nav-link" title="Vita" href="{{site.baseurl}}/vita">
+					{% octicon person height:21 aria-label:vita %}
 				</a>
 			</li>
 			<!--li class="nav-item">
-				<a class="nav-link {{'active' if page.title.downcase == blog}}" href="{{site.baseurl}}/blog">
-				{% octicon keyboard height:24 class:"right left" aria-label:blog %}
+				<a class="nav-link" href="{{site.baseurl}}/blog">
+				{% octicon keyboard height:24 class:"right" aria-label:blog %}
 				</a>
 			</li-->
 		</ul>
 	</nav>
-	<h3><a title="home" href="/">{{ site.author_name }}</a></h3>
+	<span><a title="Home" href="/">{{ site.author_name }}</a></span>
 </header>

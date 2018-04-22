@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-sm-4">
+<div class="vcard">
+	<div class="left">
 		{% if profil_image != '' %}
-		<img alt="{{ site.author_name }}" src="{{ site.profile_image }}" class="profile_img img-fluid">
+		<img alt="{{ site.author_name }}" src="{{ site.profile_image }}" class="profile-img img-fluid">
 		{% endif %}
 	</div>
-	<div class="col-sm-8 home">
-		<h2>{{ site.author_jobtitle1 }}<br />
-		{{ site.author_jobtitle2 }}</h2>
+	<div class="right">
+		<h1>{{ site.author_jobtitle1 }}<br />
+		{{ site.author_jobtitle2 }}</h1>
 		<p>{{ site.author_location }}</p>
-		<p>&rarr; <a href="{{ site.social_link }}">{{ site.social_link_name }}</a></p>
+		<p><a href="{{ site.social_link }}"><img width="50" height="30" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Xing_logo.svg"></a></p>
 		<div class="skills">
 			<img alt="Ruby Programming Language" width="21" height="21" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg">
 			<img alt="Ruby on Rails" width="21" height="25" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg">
