@@ -1,8 +1,9 @@
 // Main-Stylesheet
 // variables -------------------------------------------------------
-$prim-color: #494949; // dark grey
-$sec-color: #979797; // lighter grey
-$link-color: #d7101e; // kinda-red
+$prim-color: #494949;   // dark grey
+$sec-color: #979797;    // lighter grey
+$link-color: #d7101e;   // kinda-red
+$shadow-color: #c2c2c2; // lightest grey
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 $headline-font: Arial, Verdana, sans-serif;
@@ -13,6 +14,12 @@ $vcard-font: Helvetica, Arial, sans-serif;
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
+}
+
+@mixin box-shadow($shadow-color) {
+  -webkit-box-shadow: 0px 10px 20px 0px $shadow-color;
+  -moz-box-shadow: 0px 10px 20px 0px $shadow-color;
+  box-shadow: 0px 10px 20px 0px $shadow-color;
 }
 
 @mixin circle($width, $color) {
@@ -56,6 +63,7 @@ h4 {
 
 .container {
   @include border-radius(4px);
+  @include box-shadow($shadow-color);
   background-color: #fff;
   margin: 1.2rem auto;
   max-width: 35rem;
