@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.0"
+gem "jekyll", "~> 3.8.4"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
