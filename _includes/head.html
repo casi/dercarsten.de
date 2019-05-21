@@ -9,13 +9,22 @@
 <meta name="date" content="{{ site.time }}">
 <meta name="author" content="{{ site.author_name }}">
 <meta name="keywords" content="{{ site.keywords }}">
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description"
+  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 {% if site.google_verify %}
 <meta name="google-site-verification" content="{{ site.google_verify }}">
 {% endif %}
 <meta name="format-detection" content="telephone=no">
-<link rel="icon" href="{{ site.baseurl }}/assets/img/favicons/favicon.png">
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/touch-icon.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/img/favicons/touch-icon.png">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="{{ site.baseurl }}/assets/img/favicons/site.webmanifest">
+<link rel="mask-icon" href="{{ site.baseurl }}/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
 <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/core.css">
 <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
