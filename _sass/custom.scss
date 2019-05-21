@@ -8,22 +8,10 @@ $page-background: #f8f8f8;
 $nice-yellow: #ffdd57;
 $a-tags: "a, a:active, a:hover, a:visited";
 $a-tags-hover: "a:active, a:hover";
-$headline-font: BlinkMacSystemFont,
--apple-system,
-"Segoe UI",
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-"Fira Sans",
-"Droid Sans",
-"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-$vcard-font: Helvetica,
-Arial,
-sans-serif;
+$headline-font: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
+  Arial, sans-serif;
+$vcard-font: Helvetica, Arial, sans-serif;
 
 // mixins ----------------------------------------------------------
 @mixin border-radius($radius) {
@@ -200,6 +188,8 @@ article {
 }
 
 .vcard {
+  min-height: 7rem;
+
   .left {
     float: left;
 
@@ -227,7 +217,6 @@ article {
 
   .right {
     color: $prim-color;
-    min-height: 10rem;
     text-align: right;
 
     h1 {
@@ -238,6 +227,10 @@ article {
       h1 {
         font-size: 1.1rem;
         font-weight: 400;
+      }
+
+      p {
+        font-size: 0.8rem;
       }
     }
 
@@ -256,7 +249,7 @@ article {
   font-family: $vcard-font;
   font-size: 0.85em;
   line-height: 1;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   padding: 1rem 0;
   text-transform: uppercase;
 
