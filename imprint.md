@@ -27,5 +27,10 @@ All texts and images published at dercarsten.de are subject to copyright by Cars
 
 It is explicitly allowed, even desired, to link to my pages! Use the medium of the Internet properly and make use of hyperlinks instead of plain re-publishing of the contents.
 
+## Photo
+
+The photo of me was taken by talented photographer [Anna Lebedeva][anna_insta] during a wonderful session.
+
 [email]: mailto:info@dercarsten.de
 [internet]: http://dercarsten.de
+[anna_insta]: https://www.instagram.com/anita.berlin
