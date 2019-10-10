@@ -1,11 +1,11 @@
-begin:vcard
-fn:Carsten Behnert
-n:Behnert;Carsten
-adr;quoted-printable:;;Marheinekeplatz 12;Berlin;Berlin;10961;Deutschland
-email;internet:info@dercarsten.de
-tel;cell:+49 174 8331527‬
-x-mozilla-html:FALSE
-url:dercarsten.de
-version:2.1
-end:vcard
-
+BEGIN:VCARD
+VERSION:3.0
+FN:Carsten Behnert
+N:Behnert;Carsten;;Mr.;
+GENDER:M
+EMAIL;TYPE=WORK,INTERNET:info@dercarsten.de
+TEL;TYPE=CELL:+49 174 8331527
+ADR;TYPE=HOME:;;Marheinekeplatz 12;Berlin;Berlin;10961;Germany
+URL;TYPE=WORK:http://dercarsten.de
+REV:2019-10-10T21:44:04.714Z
+END:VCARD
