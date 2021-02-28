@@ -10,18 +10,11 @@ They have their exits and their entrances;
 And one man in his time plays many parts,
 His acts being seven ages. [..]"
 
-- Jaques
-',
+- Jaques',
 '
 CARSTEN BEHNERT
 
-Berlin, Germany
-',
-'
-CARSTEN BEHNERT
-
-25th July 1980
-'
+Berlin, Germany'
     ]
   end
 end

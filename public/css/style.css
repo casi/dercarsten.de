@@ -2,14 +2,37 @@ html,
 body {
   font-family: monospace;
   font-size: 1.1em;
-  background-color: #eee
+  background-color: #fefefe;
+}
+
+a:link,
+a:visited,
+a:hover {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+p a:link,
+p a:visited {
+  color: #fff;
+  background-color: #000;
+}
+
+p a:hover {
+  color: #000;
+  background-color: #fefe00;
 }
 
 hr {
   height: 1px;
   border: 0;
   color: #000;
-  background-color: #000
+  background-color: #000;
+}
+
+pre {
+  text-align: left;
 }
 
 .center {
@@ -20,4 +43,5 @@ hr {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  text-align: center;
 }
