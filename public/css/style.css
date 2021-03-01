@@ -1,7 +1,28 @@
+/* main stylesheet */
+@media screen and (min-width: 415px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
 html,
 body {
   font-family: monospace;
-  font-size: 1.125em;
   background-color: #fafafa;
 }
 
