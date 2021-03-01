@@ -1,8 +1,8 @@
 html,
 body {
   font-family: monospace;
-  font-size: 1.1em;
-  background-color: #fefefe;
+  font-size: 1.125em;
+  background-color: #fafafa;
 }
 
 a:link,
@@ -21,7 +21,7 @@ p a:visited {
 
 p a:hover {
   color: #000;
-  background-color: #fefe00;
+  background-color: #ff6;
 }
 
 hr {
