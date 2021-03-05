@@ -9,9 +9,11 @@
   <meta name="description" content="Official website of Carsten Behnert living in Berlin, Gemany.">
   <link rel="stylesheet" media="screen" href="css/style.css" >
 </head>
-<body>
+<!-- shows first quote at first page load -->
+<body onload="showQuote()">
   <div class="center">
   <%= yield %>
   </div>
+  <script src="js/app.js"></script>
 </body>
 </html>

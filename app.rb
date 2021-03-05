@@ -3,10 +3,6 @@ require './lib/random_content'
 
 include RandomContent
 
-before do
-  cache_control :public, :must_revalidate, max_age: 60
-end
-
 get '/' do
   @quotes = RandomContent::quotes
   erb :index
