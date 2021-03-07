@@ -8,6 +8,10 @@ get '/' do
   erb :index
 end
 
+get '/me' do
+  erb :me
+end
+
 get '/links' do
   erb :links
 end

@@ -27,22 +27,28 @@ body {
 }
 
 a:link,
-a:visited,
-a:hover {
+a:visited {
   text-align: center;
   text-decoration: none;
+  border-bottom: 1px solid #000;
   color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 0;
 }
 
 p a:link,
 p a:visited {
   color: #fff;
   background-color: #000;
+  border-bottom: 0;
 }
 
 p a:hover {
   color: #000;
-  background-color: #ff6;
+  background-color: #ff8;
 }
 
 hr {
@@ -54,6 +60,23 @@ hr {
 
 pre {
   text-align: left;
+}
+
+img {
+  border: 6px solid #fff;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  transform: rotate(-2deg);
+}
+
+img:hover {
+  -ms-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .center {

@@ -29,9 +29,9 @@ do not want."
   Philosopher
 ',
 '
-CARSTEN BEHNERT
+    CARSTEN BEHNERT
 
-Berlin, Germany'
+    Berlin, Germany'
     ]
   end
 end
