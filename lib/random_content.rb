@@ -46,12 +46,12 @@ do not want."
   private
 
   def monday_wisdom
-    ['
+    '
 "Mondays are fine. It\'s your life
 that sucks."
 
 - Ricky Gervais
   Comedian
-    ']
+    '
   end
 end
