@@ -1,6 +1,6 @@
 module RandomContent
   def quotes
-    [ '
+    quotes = ['
 From "As You Like It"
     by William Shakespeare (1623)
 
@@ -10,7 +10,8 @@ They have their exits and their entrances;
 And one man in his time plays many parts,
 His acts being seven ages. [..]"
 
-- Jaques',
+- Jaques
+',
 '
 "The day we stop exploring is the day we
 commit ourselves to live in a stagnant
@@ -18,7 +19,8 @@ world, devoid of curiosity, empty of
 dreams."
 
 - Neil deGrasse Tyson
-  Astrophysicist',
+  Astrophysicist
+',
 '
 "The freedom of Mankind does not lie in
 the fact that can do what we want, but
@@ -31,7 +33,25 @@ do not want."
 '
     CARSTEN BEHNERT
 
-    Berlin, Germany'
-    ]
+    Berlin, Germany
+    ']
+
+    if Date.today.monday?
+      quotes.insert(0, monday_wisdom)
+    else
+      quotes
+    end
+  end
+
+  private
+
+  def monday_wisdom
+    ['
+"Mondays are fine. It\'s your life
+that sucks."
+
+- Ricky Gervais
+  Comedian
+    ']
   end
 end
