@@ -36,22 +36,17 @@ do not want."
     Berlin, Germany
     ']
 
+    monday_wisdom = '
+ "Mondays are fine. It\'s your life
+ that sucks."
+    
+ - Ricky Gervais
+   Comedian'
+
     if Date.today.monday?
       quotes.insert(0, monday_wisdom)
     else
       quotes
     end
-  end
-
-  private
-
-  def monday_wisdom
-    '
-"Mondays are fine. It\'s your life
-that sucks."
-
-- Ricky Gervais
-  Comedian
-    '
   end
 end
