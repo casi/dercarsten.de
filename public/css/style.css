@@ -21,8 +21,9 @@
 }
 
 html,
-body {
-  font-family: monospace;
+body,
+pre {
+  font-family: "Courier", monospace;
   background-color: #fafafa;
 }
 
