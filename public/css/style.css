@@ -23,7 +23,7 @@
 html,
 body,
 pre {
-  font-family: "Courier", monospace;
+  font-family: "Courier", "Courier New", monospace;
   background-color: #fafafa;
 }
 
@@ -37,7 +37,7 @@ p a:visited {
 
 p a:hover {
   color: #000;
-  background-color: #ff9;
+  background-color: #ff6;
 }
 
 hr {
@@ -49,6 +49,10 @@ hr {
 
 pre {
   text-align: left;
+}
+
+p {
+  min-width: 250px;
 }
 
 img {
