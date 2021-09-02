@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require './lib/random_content'
 
 include RandomContent
 
 get '/' do
-  @quotes = RandomContent::quotes
+  @quotes = RandomContent.quotes
   erb :index
 end
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RandomContent
   def quotes
     quotes = ['
@@ -22,7 +24,7 @@ dreams."
 ',
 '
 "The freedom of Mankind does not lie in
-the fact that can do what we want, but
+the fact that we can do what we want, but
 that we do not have to do that which we
 do not want."
 
