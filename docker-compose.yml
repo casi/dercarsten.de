@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  sinatra-site:
+    container_name: sinatra-site
+    environment:
+      - VIRTUAL_HOST=dercarsten.de
+      - LETSENCRYPT_HOST=dercarsten.de
+    volumes:
+      - /etc/localtime:/etc/localtime:ro"
+    image: sinatra-site
