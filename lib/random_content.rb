@@ -32,6 +32,13 @@ do not want."
   Philosopher
 ',
 '
+"If you change the way you look at things,
+the things you look at change."
+
+- Wayne Dyer
+  Psychologist
+',
+'
     CARSTEN BEHNERT
 
     Berlin, Germany
