@@ -60,18 +60,18 @@ img {
   -ms-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-  -ms-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -ms-transform: rotate(-2.2deg);
+  -moz-transform: rotate(-2.2deg);
+  transform: rotate(-2.2deg);
 }
 
 img:hover {
   -ms-transform: rotate(0);
   -moz-transform: rotate(0);
   transform: rotate(0);
-  -ms-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .center {
