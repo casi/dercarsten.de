@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/sinatra/sinatra.git
-  revision: e69b6b9dee7165d3a583fc8a6af10ceee1ea687d
+  revision: b4f61f59cf8f938db261a6561a69ca61d01e8581
   specs:
-    rack-protection (2.1.0)
+    rack-protection (3.0.0)
       rack
-    sinatra (2.1.0)
+    sinatra (3.0.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
-      rack-protection (= 2.1.0)
+      rack-protection (= 3.0.0)
       tilt (~> 2.0)
 
 GEM
@@ -19,24 +19,24 @@ GEM
     language_server-protocol (3.16.0.3)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    parallel (1.21.0)
-    parser (3.0.2.0)
+    parallel (1.22.1)
+    parser (3.1.2.0)
       ast (~> 2.4.1)
     rack (2.2.3)
-    rainbow (3.0.0)
-    regexp_parser (2.1.1)
+    rainbow (3.1.1)
+    regexp_parser (2.3.1)
     rexml (3.2.5)
-    rubocop (1.22.3)
+    rubocop (1.28.2)
       parallel (~> 1.10)
-      parser (>= 3.0.0.0)
+      parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 1.12.0, < 2.0)
+      rubocop-ast (>= 1.17.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.12.0)
-      parser (>= 3.0.1.1)
+    rubocop-ast (1.17.0)
+      parser (>= 3.1.1.0)
     rubocop-lsp (0.1.6)
       language_server-protocol (>= 3.16)
       rubocop (>= 1.0)
@@ -50,8 +50,8 @@ GEM
     unicode-display_width (2.1.0)
 
 PLATFORMS
-  arm64-darwin-20
-  x86_64-darwin-18
+  arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   rubocop-lsp
@@ -59,4 +59,4 @@ DEPENDENCIES
   thin
 
 BUNDLED WITH
-   2.2.27
+   2.3.12

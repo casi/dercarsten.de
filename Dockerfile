@@ -1,5 +1,5 @@
 # Dockerfile
-FROM ruby:3.0-slim
+FROM ruby:3.1-slim
 
 RUN apt-get update; \
     apt-get install -y --no-install-recommends \
@@ -11,7 +11,8 @@ RUN apt-get update; \
 
 WORKDIR /code
 COPY . /code
-RUN bundle install --without development test
+RUN bundle config set --local without 'development test'; \
+    bundle install
 
 EXPOSE 4567
 
