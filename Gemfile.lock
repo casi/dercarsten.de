@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/sinatra/sinatra.git
-  revision: b4f61f59cf8f938db261a6561a69ca61d01e8581
+  revision: 029e27dfb63dd0084a56660030a52271db23a1fe
   specs:
     rack-protection (3.0.0)
       rack
@@ -22,20 +22,20 @@ GEM
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
-    rack (2.2.3)
+    rack (2.2.3.1)
     rainbow (3.1.1)
-    regexp_parser (2.3.1)
+    regexp_parser (2.5.0)
     rexml (3.2.5)
-    rubocop (1.28.2)
+    rubocop (1.30.0)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
-      rexml
-      rubocop-ast (>= 1.17.0, < 2.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.18.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.17.0)
+    rubocop-ast (1.18.0)
       parser (>= 3.1.1.0)
     rubocop-lsp (0.1.6)
       language_server-protocol (>= 3.16)
@@ -59,4 +59,4 @@ DEPENDENCIES
   thin
 
 BUNDLED WITH
-   2.3.12
+   2.3.14
