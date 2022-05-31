@@ -1,6 +1,7 @@
 # Dockerfile
-FROM ruby:3.1-slim
+FROM ruby:2.7-slim
 
+ENV BUNDLE_VERSION 2.3.14
 RUN apt-get update; \
     apt-get install -y --no-install-recommends \
             git \
@@ -11,6 +12,8 @@ RUN apt-get update; \
 
 WORKDIR /code
 COPY . /code
+
+RUN gem install bundler --version "$BUNDLE_VERSION"
 RUN bundle config set --local without 'development test'; \
     bundle install
 
