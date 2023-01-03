@@ -1,10 +1,13 @@
 version: "3.3"
 services:
-  sinatra-site:
-    container_name: sinatra-site
+  static-site:
+    container_name: static-site
     environment:
       - VIRTUAL_HOST=dercarsten.de
       - LETSENCRYPT_HOST=dercarsten.de
     volumes:
       - /etc/localtime:/etc/localtime:ro
-    image: sinatra-site
+    image: static-site
+    ports:
+      - "8080:80"
+    restart: always

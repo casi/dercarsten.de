@@ -6,10 +6,6 @@ const QUOTES = ["\n \"Mondays are fine. It's your life\n that sucks.\"\n    \n -
 "\n\"If you change the way you look at things,\nthe things you look at change.\"\n\n- Wayne Dyer\n  Psychologist\n",
 "\n    CARSTEN BEHNERT\n\n    Berlin, Germany\n\n\n"];
 
-// show quote at first page load
-window.onload = showQuote;
-document.getElementById('reload').onclick = showQuote;
-
 let d = new Date();
 // set index for quote array. getDay() for monday is 1, sunday is 0... 
 // so if today is monday, show first quote, otherwise show second quote etc.
@@ -18,7 +14,11 @@ let i = initIndex;
 
 // iterate over all quotes with every click on reload link
 function showQuote() {
-  document.getElementsByTagName('pre')[0].innerHTML = QUOTES[i];
+  document.getElementsByTagName('pre')[0].innerText = QUOTES[i];
   // when exactly the last array element is reached, start over next time
   (i == QUOTES.length-1) ? i = initIndex : i++;
 }
+
+// show quote at first page load
+window.onload = showQuote;
+document.getElementById('reload').onclick = showQuote;
